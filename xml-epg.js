@@ -91,7 +91,7 @@ container.innerHTML=programs.map(prog=>{var timeshiftLink=hasManifestUrl?this.ge
 onmouseover="this.style.backgroundColor='#61dafb'; this.style.transform='scale(1.05)';"
 onmouseout="this.style.backgroundColor=''; this.style.transform='';"
 class="timeshiftBtn"
-onclick="loadVideo('${timeshiftLink}', '${encodeURIComponent(JSON.stringify(channel.licenseKey))}');">🕒Timeshift</div><div style="border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;"
+onclick="loadVideo('${timeshiftLink}', '${encodeURIComponent(JSON.stringify(channel.licenseKey))}');document.getElementById('overlay').style.display='none';document.getElementById('video-container').style.display='flex';">🕒Timeshift</div><div style="border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;"
 onmouseover="this.style.backgroundColor='#61dafb'; this.style.transform='scale(1.05)';"
 onmouseout="this.style.backgroundColor=''; this.style.transform='';"
 class="timeshiftBtn"
